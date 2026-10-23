@@ -1,0 +1,93 @@
+UNACHI · Equipo físico local
+Investigación: 22 de octubre de 2026 · USD
+
+ALCANCE
+Comprar o reutilizar un dispositivo instalado en la universidad. La aplicación, base y documentos operan en ese equipo. Supabase autoalojado o PostgreSQL son opciones de software local. No se propone contratar el servicio administrado de Supabase.
+
+MÉTODO
+Investigación para un dispositivo físico instalado en la universidad. Documentación oficial para instalación local y fichas de proveedores de Panamá para precios. No se realizó compra ni reserva. El catálogo es una captura investigada, no inventario en tiempo real.
+
+REFERENCIAS DE COMPRA
+NUC BOX Intel N150
+Electronix Panamá | USD 298.00
+La ficha muestra 1 unidad | La ficha no aclara impuestos
+Mini PC de entrada, candidata a un piloto. No es un servidor con redundancia. Probar compatibilidad Linux, temperatura y recuperación tras un corte. No hay prueba de carga institucional.
+https://electronixpanama.com/producto/2701/mini-pc-nuc-box-intel-n150-quad-core-16gb-ram-512gb-ssd-windows-11-pro
+
+Lenovo M720S · Core i5-9400
+Tecology Panamá | USD 299.99
+Listado en catálogo; confirmar unidad y condición | Confirmar impuestos y garantía
+16 GB RAM y SSD 256 GB. La tienda ofrece equipos nuevos y restaurados; confirmar la condición exacta de esta unidad y la garantía antes de comparar.
+https://tecology.com.pa/collections/desktop
+
+Mac mini M4 · 16 GB / 512 GB
+iShop Panamá | USD 1149.95
+Agotado en la consulta | Confirmar tratamiento de impuestos
+Precio de la variante seleccionada de 512 GB, SKU MU9E3LZ/A, aunque la URL menciona 256 GB. Solo referencia mientras esté agotado. Verificar imágenes ARM64, operación continua y licencia del entorno de contenedores.
+https://pa.tiendasishop.com/collections/mac-mini-m4/products/mac-mini-chip-m4-10gpu-16gb-ram-256gb-plata
+
+Dell PowerEdge T150 · Xeon E-2324
+MCTech Panamá | USD 1156.00
+Consulte disponibilidad | Confirmar impuestos y sistema operativo
+16 GB RAM y HDD 1 TB. La configuración publicada necesita un SSD para ajustarse a la referencia de Supabase. No se ha presupuestado ese cambio, RAID ni expansión de RAM. La ficha anuncia garantía de 12 meses NBD; confirmar cobertura en David.
+https://mctechpanama.com/product/SERVIDOR-DELL-POWEREDGE-T150-XEON-E-2324
+
+APC BV1000 · 1000 VA / 600 W / 120 V
+Pana Compu Panamá | USD 94.53
+La ficha indica disponible | Impuestos no incluidos
+Precio más reciente de la ficha, corroborado en datos estructurados. No permite inferir minutos de autonomía para esta instalación. Verificar carga real, forma de onda, compatibilidad y apagado seguro; incluye red y equipos que deban seguir operando.
+https://www.panacompu.com/panama/en/product-information/apc-bv1000-ups-120v-outlets-6x-nema-5-15r-1000va600w-156j
+
+WD Elements · disco externo 2 TB
+Pana Compu Panamá | USD 226.74
+La ficha indica disponible | Impuestos no incluidos
+Precio más reciente de la ficha, corroborado en datos estructurados. El estimador usa dos unidades para rotación; cada una debe poder guardar su copia completa y versiones. Una unidad desconectada y guardada fuera del sitio requiere un procedimiento real.
+https://www.panacompu.com/panama/en/product-information/western-digital-elements-external-hard-drive-2tb-black-hdd-usb-3-0
+
+FUENTES TÉCNICAS
+Supabase · operación propia
+La instalación propia asigna al operador la administración, las actualizaciones, los respaldos, la restauración, la disponibilidad y el monitoreo. No incluye los servicios administrados de respaldo y PITR de la plataforma.
+https://supabase.com/docs/guides/self-hosting
+
+Supabase · Docker y requisitos
+Referencia oficial para la pila: mínimo 2 núcleos, 4 GB RAM y 40 GB SSD; recomendado 4+ núcleos, 8+ GB RAM y 80+ GB SSD. No es una garantía de capacidad para UNACHI. La guía distingue Linux servidor, Linux escritorio, Windows y macOS.
+https://supabase.com/docs/guides/self-hosting/docker
+
+Supabase · base de datos PostgreSQL
+Base relacional PostgreSQL para registros relacionados, consultas y reglas de acceso. La aplicación, sus formularios, la calidad de datos y los informes institucionales deben diseñarse.
+https://supabase.com/docs/guides/database/overview
+
+Supabase · identidad y permisos
+Auth gestiona usuarios y sesiones. Los permisos de cada unidad se implementan con políticas y roles. El modelo no incluye SAML SSO, SMS, identidad externa ni otros complementos.
+https://supabase.com/docs/guides/auth
+
+Supabase · archivos
+Storage guarda documentos y otros archivos con controles de acceso. Enlazar un documento ya conservado en un repositorio puede evitar duplicarlo, si el acceso y las políticas institucionales lo permiten.
+https://supabase.com/docs/guides/storage
+
+Docker · licencia de Desktop
+La documentación enumera educación entre usos gratuitos y entidades gubernamentales entre los de pago. Confirmar la clasificación aplicable a la universidad; no asumir una exención. Docker Engine en Linux es una alternativa distinta.
+https://docs.docker.com/subscription-billing/desktop-license
+
+Docker · Engine en Linux
+Instalación de Engine en distribuciones Linux compatibles. La guía publica soporte por arquitectura; validar el hardware concreto antes de instalar.
+https://docs.docker.com/engine/install/
+
+PostgreSQL · licencia
+PostgreSQL usa una licencia de código abierto sin tarifa de uso del software. Su operación, desarrollo y soporte siguen teniendo costo.
+https://www.postgresql.org/about/licence/
+
+Metabase · planes
+Metabase Open Source permite consultas y tableros sin suscripción de software. Operación, recursos y condiciones de licencia se revisan aparte; funciones avanzadas pueden requerir planes de pago.
+https://www.metabase.com/pricing
+
+MODELO DE COSTO
+Kit físico = equipo + UPS + dos discos + ajustes cotizados. Operación = electricidad + horas de soporte + otros gastos ingresados. No es una mensualidad de Supabase.
+RAM y almacenamiento son referencias de planificación, pendientes de pruebas. Desarrollo, instalación, integración, migración, capacitación, impuestos, entrega, licencias, red, climatización y reemplazos requieren cotización.
+
+PENDIENTE
+La capacidad de los servidores no se ha medido con consultas de UNACHI.
+Precios y existencias pueden cambiar; confirmar impuestos, garantía y entrega a David.
+El catálogo no es exhaustivo ni constituye una selección de proveedor.
+No se accedió a SIGPRI ni a datos privados ni se verificaron sus interfaces de integración.
+No se ha validado el inventario, la red, la tarifa eléctrica ni la política de alojamiento de la universidad.

@@ -1,0 +1,166 @@
+{
+  "reviewed": "2026-10-22",
+  "currency": "USD",
+  "method": "Investigación para un dispositivo físico instalado en la universidad. Documentación oficial para instalación local y fichas de proveedores de Panamá para precios. No se realizó compra ni reserva. El catálogo es una captura investigada, no inventario en tiempo real.",
+  "products": [
+    {
+      "id": "mini",
+      "name": "NUC BOX Intel N150",
+      "category": "Equipo",
+      "platform": "PC · Windows incluido / Linux por validar",
+      "ram": 16,
+      "disk": 512,
+      "ssd": true,
+      "price": 298,
+      "vendor": "Electronix Panamá",
+      "availability": "La ficha muestra 1 unidad",
+      "tax": "La ficha no aclara impuestos",
+      "url": "https://electronixpanama.com/producto/2701/mini-pc-nuc-box-intel-n150-quad-core-16gb-ram-512gb-ssd-windows-11-pro",
+      "notes": "Mini PC de entrada, candidata a un piloto. No es un servidor con redundancia. Probar compatibilidad Linux, temperatura y recuperación tras un corte. No hay prueba de carga institucional.",
+      "verification": "Página de producto y lectura directa del precio"
+    },
+    {
+      "id": "lenovo",
+      "name": "Lenovo M720S · Core i5-9400",
+      "category": "Equipo",
+      "platform": "PC · sistema operativo por confirmar",
+      "ram": 16,
+      "disk": 256,
+      "ssd": true,
+      "price": 299.99,
+      "vendor": "Tecology Panamá",
+      "availability": "Listado en catálogo; confirmar unidad y condición",
+      "tax": "Confirmar impuestos y garantía",
+      "url": "https://tecology.com.pa/collections/desktop",
+      "notes": "16 GB RAM y SSD 256 GB. La tienda ofrece equipos nuevos y restaurados; confirmar la condición exacta de esta unidad y la garantía antes de comparar.",
+      "verification": "Catálogo oficial del vendedor, no cotización individual"
+    },
+    {
+      "id": "mac",
+      "name": "Mac mini M4 · 16 GB / 512 GB",
+      "category": "Equipo",
+      "platform": "Mac · macOS / Apple Silicon",
+      "ram": 16,
+      "disk": 512,
+      "ssd": true,
+      "price": 1149.95,
+      "vendor": "iShop Panamá",
+      "availability": "Agotado en la consulta",
+      "tax": "Confirmar tratamiento de impuestos",
+      "url": "https://pa.tiendasishop.com/collections/mac-mini-m4/products/mac-mini-chip-m4-10gpu-16gb-ram-256gb-plata",
+      "notes": "Precio de la variante seleccionada de 512 GB, SKU MU9E3LZ/A, aunque la URL menciona 256 GB. Solo referencia mientras esté agotado. Verificar imágenes ARM64, operación continua y licencia del entorno de contenedores.",
+      "verification": "Navegador, variante de 512 GB seleccionada: precio normal USD 1,149.95 y SIN STOCK"
+    },
+    {
+      "id": "dell",
+      "name": "Dell PowerEdge T150 · Xeon E-2324",
+      "category": "Equipo",
+      "platform": "Servidor PC · sistema operativo por cotizar",
+      "ram": 16,
+      "disk": 1000,
+      "ssd": false,
+      "price": 1156,
+      "vendor": "MCTech Panamá",
+      "availability": "Consulte disponibilidad",
+      "tax": "Confirmar impuestos y sistema operativo",
+      "url": "https://mctechpanama.com/product/SERVIDOR-DELL-POWEREDGE-T150-XEON-E-2324",
+      "notes": "16 GB RAM y HDD 1 TB. La configuración publicada necesita un SSD para ajustarse a la referencia de Supabase. No se ha presupuestado ese cambio, RAID ni expansión de RAM. La ficha anuncia garantía de 12 meses NBD; confirmar cobertura en David.",
+      "verification": "Página de producto: USD 1.156,00; especificaciones y disponibilidad consultada"
+    },
+    {
+      "id": "ups",
+      "name": "APC BV1000 · 1000 VA / 600 W / 120 V",
+      "category": "Respaldo eléctrico",
+      "platform": "UPS",
+      "ram": null,
+      "disk": null,
+      "ssd": null,
+      "price": 94.53,
+      "vendor": "Pana Compu Panamá",
+      "availability": "La ficha indica disponible",
+      "tax": "Impuestos no incluidos",
+      "url": "https://www.panacompu.com/panama/en/product-information/apc-bv1000-ups-120v-outlets-6x-nema-5-15r-1000va600w-156j",
+      "notes": "Precio más reciente de la ficha, corroborado en datos estructurados. No permite inferir minutos de autonomía para esta instalación. Verificar carga real, forma de onda, compatibilidad y apagado seguro; incluye red y equipos que deban seguir operando.",
+      "verification": "Ficha y JSON-LD del vendedor: 94.53; el índice del buscador mostraba antes 112.67"
+    },
+    {
+      "id": "backup",
+      "name": "WD Elements · disco externo 2 TB",
+      "category": "Respaldo de archivos",
+      "platform": "USB 3.0 · HDD",
+      "ram": null,
+      "disk": 2000,
+      "ssd": false,
+      "price": 226.74,
+      "vendor": "Pana Compu Panamá",
+      "availability": "La ficha indica disponible",
+      "tax": "Impuestos no incluidos",
+      "url": "https://www.panacompu.com/panama/en/product-information/western-digital-elements-external-hard-drive-2tb-black-hdd-usb-3-0",
+      "notes": "Precio más reciente de la ficha, corroborado en datos estructurados. El estimador usa dos unidades para rotación; cada una debe poder guardar su copia completa y versiones. Una unidad desconectada y guardada fuera del sitio requiere un procedimiento real.",
+      "verification": "Ficha y JSON-LD del vendedor: 226.74; el índice del buscador mostraba antes 223.81"
+    }
+  ],
+  "sources": [
+    {
+      "id": "selfhost",
+      "title": "Supabase · operación propia",
+      "url": "https://supabase.com/docs/guides/self-hosting",
+      "finding": "La instalación propia asigna al operador la administración, las actualizaciones, los respaldos, la restauración, la disponibilidad y el monitoreo. No incluye los servicios administrados de respaldo y PITR de la plataforma."
+    },
+    {
+      "id": "requirements",
+      "title": "Supabase · Docker y requisitos",
+      "url": "https://supabase.com/docs/guides/self-hosting/docker",
+      "finding": "Referencia oficial para la pila: mínimo 2 núcleos, 4 GB RAM y 40 GB SSD; recomendado 4+ núcleos, 8+ GB RAM y 80+ GB SSD. No es una garantía de capacidad para UNACHI. La guía distingue Linux servidor, Linux escritorio, Windows y macOS."
+    },
+    {
+      "id": "database",
+      "title": "Supabase · base de datos PostgreSQL",
+      "url": "https://supabase.com/docs/guides/database/overview",
+      "finding": "Base relacional PostgreSQL para registros relacionados, consultas y reglas de acceso. La aplicación, sus formularios, la calidad de datos y los informes institucionales deben diseñarse."
+    },
+    {
+      "id": "auth",
+      "title": "Supabase · identidad y permisos",
+      "url": "https://supabase.com/docs/guides/auth",
+      "finding": "Auth gestiona usuarios y sesiones. Los permisos de cada unidad se implementan con políticas y roles. El modelo no incluye SAML SSO, SMS, identidad externa ni otros complementos."
+    },
+    {
+      "id": "storage",
+      "title": "Supabase · archivos",
+      "url": "https://supabase.com/docs/guides/storage",
+      "finding": "Storage guarda documentos y otros archivos con controles de acceso. Enlazar un documento ya conservado en un repositorio puede evitar duplicarlo, si el acceso y las políticas institucionales lo permiten."
+    },
+    {
+      "id": "dockerlicense",
+      "title": "Docker · licencia de Desktop",
+      "url": "https://docs.docker.com/subscription-billing/desktop-license",
+      "finding": "La documentación enumera educación entre usos gratuitos y entidades gubernamentales entre los de pago. Confirmar la clasificación aplicable a la universidad; no asumir una exención. Docker Engine en Linux es una alternativa distinta."
+    },
+    {
+      "id": "dockerengine",
+      "title": "Docker · Engine en Linux",
+      "url": "https://docs.docker.com/engine/install/",
+      "finding": "Instalación de Engine en distribuciones Linux compatibles. La guía publica soporte por arquitectura; validar el hardware concreto antes de instalar."
+    },
+    {
+      "id": "postgres",
+      "title": "PostgreSQL · licencia",
+      "url": "https://www.postgresql.org/about/licence/",
+      "finding": "PostgreSQL usa una licencia de código abierto sin tarifa de uso del software. Su operación, desarrollo y soporte siguen teniendo costo."
+    },
+    {
+      "id": "metabase",
+      "title": "Metabase · planes",
+      "url": "https://www.metabase.com/pricing",
+      "finding": "Metabase Open Source permite consultas y tableros sin suscripción de software. Operación, recursos y condiciones de licencia se revisan aparte; funciones avanzadas pueden requerir planes de pago."
+    }
+  ],
+  "limitations": [
+    "La capacidad de los servidores no se ha medido con consultas de UNACHI.",
+    "Precios y existencias pueden cambiar; confirmar impuestos, garantía y entrega a David.",
+    "El catálogo no es exhaustivo ni constituye una selección de proveedor.",
+    "No se accedió a SIGPRI ni a datos privados ni se verificaron sus interfaces de integración.",
+    "No se ha validado el inventario, la red, la tarifa eléctrica ni la política de alojamiento de la universidad."
+  ]
+}
