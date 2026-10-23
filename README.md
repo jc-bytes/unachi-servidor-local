@@ -4,6 +4,8 @@ Presentación exploratoria en español para conversar sobre un equipo físico in
 
 La presentación se publica únicamente en GitHub Pages desde `main`, en la raíz de este repositorio. No requiere compilación ni servicios externos para sus interacciones.
 
+El selector de equipo muestra un paso a la vez: uso, capacidad y especificaciones. El catálogo aplica los criterios de RAM y SSD de esa selección; los presupuestos y las fuentes se consultan en detalles desplegables.
+
 ## Archivos
 
 - `index.html`: presentación completa, con estilos, datos y scripts incorporados. Puede descargarse y abrirse sin internet.
